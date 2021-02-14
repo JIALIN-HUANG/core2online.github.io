@@ -1,3 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Margarine&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+
+.container {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  
+  li {
+    display: inline-block;
+  }
+  
+  li a {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-family: "Bebas Neue", cursive;
+    font-weight: lighter;
+    font-size: 50px;
+    padding: 0 20px;
+  }
+  
+  .cool-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width .3s;
+  }
+  
+  .cool-link:hover::after {
+    widows: 100%;
+    transition: width 0.3s;
+  }
+  
 .headline{
     color: #6C464F;
+}
+
+.context{
+    font-family: 'Margarine', cursive;
+    font-size: 2rem;
+}
+
+.face{
+    width:540px; 
+    height: auto;
 }
